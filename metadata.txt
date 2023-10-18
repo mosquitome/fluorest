@@ -1,0 +1,5 @@
+filename	timepoint	wells (ordered as they appear in the file)
+example_A1-D1_post-drug.czi	post	"A1, B1, C1, D1"
+example_A1-D1_pre-drug.czi	pre	"A1, B1, C1, D1"
+example_A2-D2_post-drug.czi	post	"A2, B2, C2, D2"
+example_A2-D2_pre-drug.czi	pre	"A2, B2, C2, D2"
