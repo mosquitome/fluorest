@@ -1,7 +1,7 @@
 # fluorest
 Python module for automated analysis of fluorescent responses in live cell microscopy timecourses.
 
-# example
+### example
 Note: a tab-delimited file (metadata.txt) detailing the image files and their contents is required in the same directory as the images.
 ```
 data = loadImages() # load images from current working directory
