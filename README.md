@@ -3,7 +3,10 @@ Python module for automated analysis of fluorescent responses in live cell micro
 
 ### install
 Note: This has not been checked! There may be issues with installing OpenCV.
-Use [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python)to create an environment (called "cells") with all required software. Note: ensure that conda-forge has been [added as a channel](https://conda-forge.org/docs/user/introduction.html).
+
+Use [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python) to create an environment (called "cells") with all required software.
+
+Note: ensure that conda-forge has been [added as a channel](https://conda-forge.org/docs/user/introduction.html).
 ```
 conda create -n cells python=3.10 czifile=2019.7.2 pandas=2.1.1 numpy=1.26.0 cv2=4.8.1 matplotlib=3.8.0
 ```
