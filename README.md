@@ -4,11 +4,14 @@ Python module for automated analysis of fluorescent responses in live cell micro
 ### install
 _Note: This has not been checked! There may be issues with installing OpenCV._
 
-Use [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python) to create an environment (called "cells") with all required software:
+Use [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python) to create an environment (called "cells") with all required software (see note about Open CV below):
 
 _Note: ensure that conda-forge has been [added as a channel](https://conda-forge.org/docs/user/introduction.html)._
+_Note: Open CV cannot be installed with conda, so first create a conda env (called "cells"), and then use pip to install Open CV within this env. The pip version inside the env needs to be used, and the path to this may vary depending on your operating system. Here I used Windows, and the executable was withing the \Scripts directory of the env. On Linux, for example, it may be held with other binaries in a /bin directory._
 ```
-conda create -n cells python=3.10 czifile=2019.7.2 pandas=2.1.1 numpy=1.26.0 cv2=4.8.1 matplotlib=3.8.0
+conda create -p path\to\env\cells python=3.10 czifile=2019.7.2 pandas=2.1.1 numpy=1.26.0 matplotlib=3.8.0
+conda activate cells
+path\to\env\cells\Scripts\pip3.exe install opencv-python==4.8.1.78
 ```
 ### example
 We used the automated stage function on a confocal microscope to image a series of wells is quick succession. For sets of wells, images were taken before drug addition, then after. This produced two multi-image files for each set of wells: one "pre" and one "post" drug file.
