@@ -2,9 +2,9 @@
 Python module for automated analysis of fluorescent responses in live cell microscopy timecourses.
 
 ### install
-_Note: Although this should work on Linux/mac, only Windows has been tested._
-
 Use [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python) to create an environment (called "cells") with all required software (see note about OpenCV below):
+
+_Note: Although this should work on Linux/mac, only Windows has been tested._
 
 _Note: ensure that conda-forge has been [added as a channel](https://conda-forge.org/docs/user/introduction.html)._
 
