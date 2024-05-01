@@ -1,5 +1,5 @@
 # fluorest
-Python module for automated analysis of fluorescent responses in live cell microscopy timecourses.
+Python module for automated analysis of fluorescent responses in live cell microscopy timecourses. Currently only works with CZI image files (i.e. from Zeiss microscopes)
 
 ### install
 Use [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python) to create an environment (called "cells") with all required software (see note about OpenCV below):
