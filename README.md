@@ -2,13 +2,13 @@
 Python module for automated analysis of fluorescent responses in live cell microscopy timecourses.
 
 ### install
-_Note: This has not been checked! There may be issues with installing OpenCV._
+_Note: Although this should work on Linux/mac, only Windows has been tested._
 
-Use [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python) to create an environment (called "cells") with all required software (see note about Open CV below):
+Use [Conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python) to create an environment (called "cells") with all required software (see note about OpenCV below):
 
 _Note: ensure that conda-forge has been [added as a channel](https://conda-forge.org/docs/user/introduction.html)._
 
-_Note: Open CV cannot be installed with conda, so first create a conda env (called "cells"), and then use pip to install Open CV within this env. The pip version inside the env needs to be used, and the path to this may vary depending on your operating system. Here I used Windows, and the executable was withing the \Scripts directory of the env. On Linux, for example, it may be held with other binaries in a /bin directory._
+_Note: OpenCV cannot be installed with conda, so first create a conda env (called "cells"), and then use pip to install OpenCV within this env. The pip version inside the env needs to be used, and the path to this may vary depending on your operating system. Here I used Windows, and the executable was withing the \Scripts directory of the env. On Linux, for example, it may be held with other binaries in a /bin directory._
 ```
 conda create -p path\to\env\cells python=3.10 czifile=2019.7.2 pandas=2.1.1 numpy=1.26.0 matplotlib=3.8.0
 conda activate cells
