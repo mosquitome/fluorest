@@ -1,4 +1,4 @@
-# fluorest
+# fluorest 💐
 Python module for automated analysis of fluorescent responses in live cell microscopy timecourses. Currently only works with CZI image files (i.e. from Zeiss microscopes).
 
 ### install
