@@ -304,6 +304,9 @@ def createSummary(well, img0, img1, img2, img3, img4, img5, img6, img7, director
             ax[idx].imshow(i)
         ax[idx].tick_params(axis='both', labelbottom=False, labelleft=False)
         #mplp.subplots_adjust(left=0, bottom=0, right=1, top=1, wspace=0, hspace=0)
+    ax[8] = fig.add_subplot(gs[8])
+    ax[8].set_axis_off()
+    ax[8].annotate(well, xy=[0.5, 0.5], xycoords='axes fraction', fontsize='x-large')
     mplp.savefig('tmp/' + well + '.svg', dpi=300, format='svg')
 
 
